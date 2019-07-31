@@ -6,3 +6,25 @@
 6) Upload each file respectively to the correct global area
 
 NOTE: This only works on Sandboxes because the default client_id 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' does not work on the PIG.
+
+
+Alternatively, you can just use the below:
+
+```
+{   
+   "_v":"99.9",
+   "clients": [
+      {
+         "client_id":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+         "resources": [
+            {
+               "resource_id":"/**",
+               "methods":["get","put","post","patch","delete"],
+               "read_attributes":"(**)",
+               "write_attributes":"(**)"
+            }
+         ]
+      }
+    ]
+}
+```
